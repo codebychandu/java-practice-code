@@ -1,0 +1,11 @@
+The sc.close() function, in the context of a Scanner object in Java, is used to release system resources associated with the scanner. When you create a Scanner object to read input from a source (such as a file, input stream, or keyboard input), the Scanner may hold onto system resources like file descriptors or memory buffers.
+
+Here's why you need to use sc.close():
+
+Resource Cleanup: Java doesn't automatically release these system resources when an object goes out of scope or is no longer needed. Failing to close the Scanner explicitly means those resources might be held indefinitely, potentially leading to resource leaks and degraded performance.
+
+Resource Conservation: These system resources, like file descriptors, are finite and should be released as soon as they're no longer needed to free them up for other parts of your program or other programs running on the system.
+
+Best Practices: Explicitly closing resources is a best practice in Java programming. It ensures your code behaves predictably and efficiently, especially in long-running applications or systems with heavy resource usage.
+
+Here's how you close a Scanner:
