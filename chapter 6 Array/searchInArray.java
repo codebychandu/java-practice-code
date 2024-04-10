@@ -29,8 +29,8 @@ public class searchInArray {
             
         // }
 
+        sc.close();
     }
-    // sc.close();
     
     
 }
