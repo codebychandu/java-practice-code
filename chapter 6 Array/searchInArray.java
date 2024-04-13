@@ -13,9 +13,9 @@ public class searchInArray {
             System.out.printf("Enter the %d value: ", i);
             arr[i] = sc.nextInt();
             c = arr[i];
+            System.out.print("Your Number is: " + c);
 
         }
-        System.out.print("Your Number is: " + c);
 
         // System.out.print("Enter the number you want to search: ");
         // int b = sc.nextInt();
