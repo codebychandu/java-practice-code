@@ -1,3 +1,5 @@
+package Basic;
+
 import java.util.Scanner;
 // This program will great any person by there name.
 

@@ -1,3 +1,5 @@
+package Basic;
+
 import java.util.Scanner;
 // area of a parallelogram = area=(d1*d2)
 public class ParalleloGram {

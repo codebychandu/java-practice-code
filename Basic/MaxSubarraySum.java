@@ -1,3 +1,5 @@
+package Basic;
+
 // public class MaxSubarraySum{
 //     public static int maxSubArraySum(int[] nums) {
 //         int maxSum = nums[0];

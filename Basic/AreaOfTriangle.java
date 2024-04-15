@@ -1,3 +1,5 @@
+package Basic;
+
 import java.util.Scanner;
 // area of triangle = (1/2) · b · h
 public class AreaOfTriangle {
