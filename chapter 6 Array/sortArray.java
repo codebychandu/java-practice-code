@@ -93,21 +93,45 @@ public class sortArray{
         //     }    
         // }
 
-        static void sortZeroandone2(int[] arr) {
+        /* question:- Given an array of integers 'a' move all the even integers
+            at the beginning of the array followed by all the odd integers. 
+            The relative order of odd or even integer does not matter. Return any
+            array that satsfies the condition.
+            */
+        static void sortArraybyParity(int[] arr){
             int n = arr.length;
             int left = 0, right = n - 1;
             while (left < right) {
-                if (arr[left] == 0) {
-                    left++;
-                } else if (arr[right] == 1) {
-                    right--;
-                } else {
+                if (arr[left] % 2 == 1 && arr[right] % 2 == 0) {
                     swap(arr, left, right);
                     left++;
                     right--;
                 }
+                if (arr[left] % 2 == 0) {
+                    left++;
+                }
+                if (arr[right] % 2 == 1) {
+                    right--;
+                }
             }
+
         }
+
+        // static void sortZeroandone2(int[] arr) {
+        //     int n = arr.length;
+        //     int left = 0, right = n - 1;
+        //     while (left < right) {
+        //         if (arr[left] == 0) {
+        //             left++;
+        //         } else if (arr[right] == 1) {
+        //             right--;
+        //         } else {
+        //             swap(arr, left, right);
+        //             left++;
+        //             right--;
+        //         }
+        //     }
+        // }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -122,8 +146,9 @@ public class sortArray{
         System.out.println("Unsorted Array is: ");
         printArray(arr);
         System.out.println("Sorted Array is: ");
+        sortArraybyParity(arr);
         // sortZeroandone1(arr);
-        sortZeroandone2(arr);
+        // sortZeroandone2(arr);
         printArray(arr);
 
 
