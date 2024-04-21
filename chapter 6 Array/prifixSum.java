@@ -1,7 +1,7 @@
 
 
 
-// Given an integer 'a', return the prefix sum/running sum in the same array without creating a new array
+//Question:- Given an integer 'a', return the prefix sum/running sum in the same array without creating a new array
 
 import java.util.Scanner;
 
@@ -36,6 +36,9 @@ public class prifixSum {
             }
             return arr;
         }
+
+        // write the code for suffix sum of array
+            // cdoe ...
      
 
         public static void main(String[] args) {
