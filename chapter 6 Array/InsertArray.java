@@ -3,7 +3,6 @@
 // Question 1: insert a new value into the given position.
 
 import java.util.Scanner;
-
 public class InsertArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -27,8 +26,6 @@ public class InsertArray {
         for (int i = 0; i < arr.length ; i++) {
             System.out.print(arr[i] + " ");
         }
-
-
         sc.close();
     }
     
