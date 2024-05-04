@@ -15,12 +15,25 @@ public class transposeMatrix {
         }
     }
 
+
+    // 1st way to transform the matrix.
     static void transpose(int[][] arr, int rows, int cols){
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 System.out.print(arr[j][i] + " ");
             }
             System.out.println();
+        }
+    }
+    // 2nd way: to transform the matrix.
+    static void transpose1(int[][] arr, int rows, int cols){
+        for (int i = 0; i < cols; i++) {
+            for (int j = i; j < rows; j++) {
+                int temp = arr[i][j];
+                arr[i][j] = arr[j][i];
+                arr[j][i] = temp;
+            }
+            // System.out.println();
         }
     }
     public static void main(String[] args) {
@@ -40,7 +53,9 @@ public class transposeMatrix {
         System.out.println("Your Matrix value is: ");
         printMatrix(arr, rows, cols);
         System.out.println("Transpose Matrix value is: ");
-        transpose(arr, rows, cols);
+        // transpose(arr, rows, cols);
+        transpose1(arr, rows, cols);
+        printMatrix(arr, rows, cols);
         
         sc.close();
     }
