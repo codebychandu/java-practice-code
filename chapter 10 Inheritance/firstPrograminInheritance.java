@@ -43,3 +43,25 @@ public class firstPrograminInheritance {
     }
     
 }
+
+
+// Question2: Create a class animal and derived another class dog from it.
+
+// public  class Animal{
+
+//     static class dog {
+//         public void printMe(){
+//             System.out.println("I am the dog constructor ");
+//         }
+        
+//     }
+//     static class cat{
+//         public void printMe(){
+//             System.out.println("I am the cat constructor ");
+//         }
+//     }
+//     public static void main(String[] args) {
+//         dog d = new dog();
+//         d.printMe();
+//     }
+// }
