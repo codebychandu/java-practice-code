@@ -1,5 +1,6 @@
-import java.util.Scanner;
 
+
+import java.util.Scanner;
 public class printOddNumber {
 
     public static void printOdd(int a){
@@ -9,18 +10,21 @@ public class printOddNumber {
             }
             
         }
-        // return;
     }
 
-
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-
-        printOdd(a);
-
-
-        sc.close();
+        try (Scanner sc = new Scanner(System.in)) {
+            int a = sc.nextInt();
+            printOdd(a);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        
+        // In this given example below there is resources leak problem occuring even added sc.close();
+        // Scanner sc = new Scanner(System.in);
+        // int a = sc.nextInt();
+        // printOdd(a);
+        // sc.close();
 
     }
     
