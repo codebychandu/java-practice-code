@@ -1,7 +1,7 @@
 
 
 import java.util.Scanner;
-public class printOddNumber {
+public class OddNumber {
     public static void printOdd(int a){
         for (int i = 1; i <= a; i++) {
             if(i % 2 != 0){
