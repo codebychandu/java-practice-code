@@ -1,4 +1,4 @@
-package classes_and_object;
+// package classes_and_object;
 
 public class wrap {
     public static void main(String[] args) {
