@@ -15,11 +15,14 @@ public class factorCountor {
         int factorCount = 0;
         
         // Loop through all possible divisors and count factors
+        System.out.print("All the factor number is: ");
         for (int i = 1; i <= number; i++) {
             if (number % i == 0) {
+                System.out.print(i + " ");
                 factorCount++;
             }
         }
+        System.out.println();
         
         // Output the number of factors
         System.out.println("Number of factors of " + number + " is: " + factorCount);
